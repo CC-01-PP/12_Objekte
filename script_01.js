@@ -51,8 +51,21 @@ const txt =     "ich bin " + person.firstName + " " +
 output(txt);
 output(person.sayHello());
 
+/***** Objekte 2 Hierarchie *******/
 
 
+const baikal = {
+                value:"10m",
+                deep: {
+                        deeper: {
+                                deepest: "Das Licht - auf 1642m!"
+                        }
+                }
+
+}
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+// 192.168.1.0 // apple.com
 
 /** Ausgabe */
 function output(outputData) {
